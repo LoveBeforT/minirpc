@@ -1,7 +1,8 @@
 package serialize
 
 type InfDefine interface {
-	GetString() string
+	GetData() []byte
+	SetData(data []byte)
 	WriteString(string)
 	GetInt() int
 	WriteInt(int)
